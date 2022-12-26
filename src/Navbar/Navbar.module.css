@@ -1,0 +1,59 @@
+.h1 {
+    font-weight: lighter;
+    color: white;
+}
+
+.h4 {
+    font-weight: lighter;
+}
+
+.span {
+    font-weight: bold;
+    color: lightseagreen;
+}
+
+.navbar {
+    width: 100vw;
+    background-color: #222;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cartTotal {
+    width: 250px;
+    background-color: #333;
+    border-radius: 0.5rem;
+
+    color: rgb(26, 209, 185);
+    border: 2px solid lightseagreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.05s ease-in-out;
+}
+
+.total {
+    background-color: lightseagreen;
+    color: black;
+    width: 15%;
+    font-weight: bold;
+
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartTotal:hover {
+    background-color: #222;
+    cursor: pointer;
+}
+
+.cartTotal:active{
+    background-color: lightseagreen;
+    color: black;
+}

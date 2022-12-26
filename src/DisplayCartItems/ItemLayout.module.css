@@ -1,0 +1,62 @@
+.item {
+  margin: 1rem 0;
+  background-color: white;
+  padding: 1rem;
+  list-style: none;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.75rem;
+}
+
+.item header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 0;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.itemprice {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem 0;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  padding: 0.15rem 1rem;
+  color: lightseagreen;
+  background-color: #333;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.actions button:hover {
+  background-color: #111;
+}
+
+.actions button:active{
+  background-color: lightseagreen;
+  color: black;
+}

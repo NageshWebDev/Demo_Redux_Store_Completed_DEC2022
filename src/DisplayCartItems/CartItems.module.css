@@ -1,0 +1,179 @@
+.h1{
+    color: white;
+    font-weight: lighter;
+}
+
+.span{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main{
+    margin: 3rem 0;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    width: max-content;
+    min-width: 500px;
+    background-color: #333;
+    border: 2px solid #222;
+    border-radius: 0.75rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div{
+    background-color: lightseagreen;
+    color: black;
+    width: 100%;
+
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    border-radius: 0.25rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ECDiv{
+    margin: 1rem;
+    width: 100%;
+    height: 100px;
+    color: lightseagreen;
+    background-color: #222;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    animation: wiggle 0.5s linear infinite alternate;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.btn{
+    width: 100%;
+    border: none;
+    background-color: #222;
+    color: lightseagreen;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+}
+
+.btn:hover{
+   background-color: black;
+}
+
+.btn:active{
+    background-color: lightseagreen;
+    color: black;
+}
+
+.star{
+    color: gold;
+    animation: spin 1s linear infinite alternate;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+}
+
+.spProduct{
+    width: 450px;
+    height:calc(max-content + 100px);
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+    background-color: white;
+    overflow-wrap: break-word;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 0.75rem;
+    background-color: #555;
+}
+
+.loading{
+    animation: spin360 2s linear infinite;
+}
+
+@keyframes spin360 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.message{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    color: white;
+}
+
+.img{
+    height: 100px;
+}
+
+.title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.price{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: lightseagreen;
+    margin: 0;
+}
+
+.close{
+    font-size: 2rem;
+    margin: 0;
+    color: tomato;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.close:hover::after{
+    position: absolute;
+    content: "Close It";
+    font-size: 1rem;
+    font-weight: bold;
+    width: max-content;
+}
